@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        background-color: lightgray;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      nav a {
+        font-size: 40px;
+        text-decoration: none;
+      }
+      footer {
+        background-color: lightgray;
+      }
+      .card1,
+      .card2 {
+        border: 3px solid #000;
+        margin-bottom: 5px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 400px;
+      }
+      .card1 p {
+        font-size: 30px;
+        text-align: center;
+      }
+      .card2 p {
+        font-size: 30px;
+        text-align: center;
+      }
+      @media (min-width: 1000px) {
+        .container {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin-top: 60px;
+        }
+        .card1,
+        .card2 {
+          width: 40%;
+        }
+        nav {
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Services</a>
+      <a href="">Contact</a>
+    </nav>
+    <div class="container">
+      <div class="card1">
+        <p>This is a flex item</p>
+        <footer>Footer</footer>
+      </div>
+      <div class="card2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ipsam
+          est recusandae, ipsum adipisci rem hic doloremque delectus quasi enim!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore totam,
+          facilis, suscipit, ipsa reprehenderit velit nemo quia consequuntur
+          animi quaerat dicta. Est a molestiae, et quas eveniet inventore
+          architecto, natus totam libero perferendis sapiente ipsum facere enim
+          unde hic nulla doloribus voluptates tempore nobis ad. Unde provident
+          suscipit assumenda minima.
+        </p>
+        <footer>Footer</footer>
+      </div>
+    </div>
+  </body>
+</html>
